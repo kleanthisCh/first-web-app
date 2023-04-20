@@ -1,7 +1,7 @@
 const Products = require("../models/products.model");
 
 exports.findAll = function (req, res) {
-  console.log("Find All Controler");
+  console.log("Find All Products Controler");
   Products.find({}, (err, results) => {
     if (err) {
       res.status(400).json({ status: false, data: err });

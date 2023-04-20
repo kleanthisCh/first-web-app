@@ -3,7 +3,7 @@ const logger = require("../logger/logger");
 
 
 exports.findAll = function (req, res) {
-  console.log("Find All Controler");
+  console.log("Find All Users Controler");
   User.find({}, (err, results) => {
     if (err) {
       res.status(400).json({ status: false, data: err });
